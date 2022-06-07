@@ -25,8 +25,8 @@ export const Filter = () => {
   };
 
   return (
-    <aside className="w-[20rem]">
-      <section className="mt-4">
+    <aside className="w-[20rem] p-8">
+      <section className="mt-4 flex flex-col mb-4">
         <div className="flex items-center justify-between">
           <span>Sort by</span>
           <button className="hover:underline" onClick={handleClearAllClick}>
@@ -55,7 +55,7 @@ export const Filter = () => {
         </label>
       </section>
 
-      <section>
+      <section className="flex flex-col mb-4">
         <div>Ideal for</div>
         <label>
           <input
@@ -77,7 +77,7 @@ export const Filter = () => {
         </label>
       </section>
 
-      <section>
+      <section className="flex flex-col mb-4">
         <div>Size</div>
 
         <label>
@@ -118,7 +118,7 @@ export const Filter = () => {
         </label>
       </section>
 
-      <section>
+      <section className="flex flex-col mb-4">
         <div>Brand</div>
         <label>
           <input
