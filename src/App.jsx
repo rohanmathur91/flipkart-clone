@@ -5,8 +5,6 @@ export const App = () => {
     <div className="min-h-screen">
       <Navbar />
       <ProductListing />
-      {/* filter */}
-      {/* Products */}
     </div>
   );
 };
