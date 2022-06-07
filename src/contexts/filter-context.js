@@ -31,8 +31,6 @@ const filterInitialState = {
 };
 
 const filterReducer = (filterState, { type, payload }) => {
-  console.log(type, payload);
-
   switch (type) {
     case "SET_SORT_BY":
       return { ...filterState, sortBy: payload };
@@ -80,8 +78,6 @@ const FilterProvider = ({ children }) => {
     { sortBy, idealFor, brands, sizes, searchQuery, products },
     filterDispatch,
   ] = useReducer(filterReducer, filterInitialState);
-
-  console.log(searchQuery);
 
   const idealProducts = getIdealProducts(products, idealFor);
   const productsBySizes = getProductsBySize(idealProducts, sizes);
